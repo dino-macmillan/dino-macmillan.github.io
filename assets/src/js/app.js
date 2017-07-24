@@ -326,8 +326,8 @@
                             // requires exif.js (included in package.json) - orientates the image correctly
                             //enableExif: true, [Disabled for now - As not working on firefox]
                             enableExif: true,
-                            enableOrientation: true,
                             viewport: {width: 150, height: 150},
+                            boundary: {width: 250, height: 250},
                             url: result
                             
                         });
@@ -352,14 +352,7 @@
             e.preventDefault();
             // get the croppie result and do something with it...
             SHV.$crop_preview.croppie('result', {
-                    type: 'base64',
-                    size: {
-                        height: 800,
-                        width: 800
-                    },
-                    format: 'jpeg',
-                    quality: 1,
-                    circle: false
+                    type: 'base64'
                 }).then(function(base64) {
                     // determine where to append the data based on the image_scope
                     switch(SHV.image_scope) {
