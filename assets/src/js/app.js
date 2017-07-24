@@ -325,9 +325,9 @@
                             
                             // requires exif.js (included in package.json) - orientates the image correctly
                             //enableExif: true, [Disabled for now - As not working on firefox]
-                            enableExif: false,
+                            enableExif: true,
+                            enableOrientation: true,
                             viewport: {width: 150, height: 150},
-                            boundary: {width: 250, height: 250},
                             url: result
                             
                         });
