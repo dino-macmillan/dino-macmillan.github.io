@@ -352,7 +352,7 @@
             e.preventDefault();
             // get the croppie result and do something with it...
             SHV.$crop_preview.croppie('result', {
-                    type: 'base64'
+                    type: 'canvas'
                 }).then(function(base64) {
                     // determine where to append the data based on the image_scope
                     switch(SHV.image_scope) {
