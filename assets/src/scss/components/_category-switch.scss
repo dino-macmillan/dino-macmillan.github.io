@@ -1,0 +1,31 @@
+.category-switch {
+    display: block;
+    width: 100%;
+    margin-bottom: $spacer-half-height;
+    @include clearfix;
+}
+
+.category-switch__label {
+    display: block;
+    width: 100%;
+    margin-bottom: $spacer-half-height;
+    text-align: center;
+    font-family: $font-macmillan;
+    font-size: 16px;
+    line-height: 1;
+    color: $color-brand-green;
+
+    @media screen and (min-width: $screen-sm-min) {
+        margin-bottom: 0;
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        font-size: 24px;
+    }
+}
+
+.category-switch__switch {
+    width: 100%;
+}

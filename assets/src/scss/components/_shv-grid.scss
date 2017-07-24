@@ -1,0 +1,143 @@
+.shv-grid {
+    display: block;
+    width: 100%;
+    margin-left: -5px;
+    margin-right: -5px;
+    @include clearfix;
+}
+
+.shv-grid__item {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    padding: 5px;
+
+    @media screen and (min-width: $screen-sm-min) {
+        width: 25%;
+    }
+}
+
+.shv-grid__inner {
+    display: block;
+    padding: 5px;
+    background-color: $color-white;
+}
+
+.shv-grid__meta {
+    display: block;
+    width: 100%;
+    padding: 5px;
+}
+
+.shv-grid__avatar {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+
+    > span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: #dde1e3 url('/images/brave-shaver-placeholder.png') no-repeat center center;
+        background-size: cover;
+    }
+}
+
+.shv-grid__name {
+    display: block;
+    height: 37px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: normal;
+    font-family: $font-avenir-book;
+    word-break: break-word;
+    color: $color-brand-green;
+}
+
+.shv-grid__stats {
+    padding: 5px 0;
+}
+
+.shv-grid__stat {
+    color: $color-brand-green;
+    @include clearfix;
+
+    > strong {
+        display: inline-block;
+        float: left;
+        width: 55%;
+        font-family: $font-avenir-heavy;
+        font-weight: normal;
+    }
+
+    > span {
+        display: inline-block;
+        float: left;
+        width: 45%;
+        font-family: $font-avenir-book;
+        font-weight: normal;
+    }
+}
+
+.shv-grid--no-matches {
+    padding: 50px 0;
+    text-align: center;
+
+    @media screen and (min-width: $screen-sm-min) {
+        padding: 100px 0;
+    }
+
+    strong {
+        margin-top: 0;
+        font-family: $font-macmillan;
+        font-size: 24px;
+        line-height: 1;
+        color: $color-brand-purple;
+
+        @media screen and (min-width: $screen-sm-min) {
+            font-size: 28px;
+        }
+
+        @media screen and (min-width: $screen-md-min) {
+            font-size: 36px;
+        }
+    }
+}
+
+// for browsers supporting flexbox
+/*
+.flexbox {
+    .shv-grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .shv-grid__item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .shv-grid__inner {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .button {
+            align-self: flex-end;
+        }
+    }
+
+    .shv-grid__name {
+        height: auto;
+        min-height: 37px;
+    }
+}
+*/

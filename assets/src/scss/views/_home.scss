@@ -1,0 +1,20 @@
+body.page--home {
+    .main {
+        padding-top: 0;
+    }
+
+    // ridiculous.
+    .button--sign-up {
+        @media screen and (max-width: $screen-sm-max) {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            font-size: 48px;
+        }
+    }
+
+    .button--donate {
+        @media screen and (max-width: $screen-sm-max) {
+            font-size: 24px;
+        }
+    }
+}

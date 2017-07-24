@@ -1,0 +1,53 @@
+.spacer,
+.spacer--full {
+    height: $spacer-full-height;
+    @include clearfix();
+}
+
+.spacer--half {
+    height: $spacer-full-height / 2;
+    @include clearfix();
+}
+
+.space,
+.space--full {
+    margin-top: $spacer-full-height;
+    margin-bottom: $spacer-full-height;
+}
+
+.space--half {
+    margin-top: $spacer-full-height / 2;
+    margin-bottom: $spacer-full-height / 2;
+}
+
+.space--full-below {
+    margin-bottom: $spacer-half-height;
+
+    @media screen and (min-width: $screen-sm-min) {
+        margin-bottom: $spacer-full-height;
+    }
+}
+
+.space--half-below {
+    margin-bottom: $spacer-full-height / 2;
+}
+
+.space--full-above {
+    margin-top: $spacer-full-height;
+}
+
+.space--half-above {
+    margin-top: $spacer-full-height / 2;
+}
+
+a.space {
+    display: block;
+}
+
+.space--none-below {
+    margin-bottom: 0;
+}
+
+.space--none-above {
+    margin-top: 0;
+}

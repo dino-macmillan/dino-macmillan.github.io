@@ -1,0 +1,264 @@
+body {
+    font-size: 16px;
+    font-family: $font-avenir-book;
+    color: $color-brand-green;
+}
+
+p {
+    margin-top: 0;
+
+    a {
+        color: $color-brand-green;
+    }
+}
+
+strong {
+    font-family: $font-avenir-heavy;
+    font-weight: normal;
+}
+
+.text--large {
+    @media screen and (min-width: $screen-sm-min) {
+        font-size: 20px;
+    }
+}
+
+.text--x-large {
+    font-family: $font-futura-medium;
+
+    @media screen and (min-width: $screen-sm-min) {
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        font-size: 24px;
+    }
+}
+
+// heading styles
+h1,
+.text--display,
+.text--display-large,
+.text--display-mid,
+.text--display-small,
+.text--display-xs {
+    margin-top: 0;
+    font-family: $font-macmillan;
+    color: $color-brand-green-lt;
+    text-align: center;
+}
+
+.text--display-xs {
+    font-size: 18px;
+    line-height: 1;
+
+    @media screen and (min-width: $screen-sm-min) {
+        font-size: 20px;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        font-size: 28px;
+    }
+}
+
+.text--display-small {
+    font-size: 18px;
+    line-height: 1;
+
+    @media screen and (min-width: $screen-sm-min) {
+        font-size: 26px;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        font-size: 36px;
+    }
+}
+
+.text--display-mid {
+    font-size: 28px;
+    line-height: 1;
+
+    @media screen and (min-width: $screen-sm-min) {
+        font-size: 50px;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        font-size: 68px;
+    }
+}
+
+.text--display-large {
+    font-size: 40px;
+    line-height: 1;
+
+    @media screen and (min-width: $screen-sm-min) {
+        font-size: 73px;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        font-size: 80px;
+    }
+}
+
+h2,
+.text--large-heading {
+    margin-top: 0;
+    font-size: 28px;
+    font-family: $font-futura-heavy;
+    color: $color-brand-green-lt;
+
+    @media screen and (min-width: $screen-sm-min) {
+        font-size: 50px;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        font-size: 72px;
+    }
+}
+
+h3,
+.text--small-heading {
+    margin-top: 0;
+    font-family: $font-futura-heavy;
+    font-size: 20px;
+    color: $color-brand-green-lt;
+
+    @media screen and (min-width: $screen-sm-min) {
+        font-size: 28px;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        font-size: 36px;
+    }
+}
+
+.text--smaller-heading {
+    margin-top: 0;
+    font-family: $font-futura-heavy;
+    font-size: 20px;
+    color: $color-brand-green;
+
+    @media screen and (min-width: $screen-sm-min) {
+        font-size: 24px;
+    }
+}
+
+h4,
+.text--subheading {
+    margin-top: 0;
+    font-family: $font-futura-medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    color: $color-brand-green;
+
+    @media screen and (min-width: $screen-sm-min) {
+        font-size: 20px;
+    }
+}
+
+.text--summary {
+    display: block;
+    margin-top: 0;
+    padding: $spacer-half-height 0;
+    border-top: 4px solid $color-white;
+    border-bottom: 4px solid $color-white;
+    font-family: $font-macmillan;
+    color: $color-brand-purple;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1;
+
+    @media screen and (min-width: $screen-sm-min) {
+        font-size: 36px;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        font-size: 48px;
+    }
+}
+
+.text--small-summary {
+    display: block;
+    margin-top: 0;
+    padding: $spacer-half-height 0;
+    border-top: 4px solid $color-white;
+    border-bottom: 4px solid $color-white;
+    font-family: $font-macmillan;
+    color: $color-brand-purple;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1;
+
+    @media screen and (min-width: $screen-sm-min) {
+        font-size: 24px;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        font-size: 30px;
+    }
+
+    span {
+        display: block;
+        font-size: 30px;
+        font-style: normal;
+
+        @media screen and (min-width: $screen-sm-min) {
+            font-size: 40px;
+        }
+
+        @media screen and (min-width: $screen-md-min) {
+            font-size: 50px;
+        }
+    }
+}
+
+// alignment
+.align--center {
+    text-align: center;
+}
+
+.align--center--md {
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        text-align: center;
+    }
+}
+
+.align--left {
+    text-align: left;
+}
+
+.align--right {
+    text-align: right;
+}
+
+// basic brand color modifiers
+.color--purple {
+    color: $color-brand-purple;
+}
+
+.color--green {
+    color: $color-brand-green;
+}
+
+.color--green-lt {
+    color: $color-brand-green-lt;
+}
+
+.color--white {
+    color: $color-white;
+}
+
+.color--gray {
+    color: $color-text;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link--large {
+    color: $color-brand-green;
+    font-family: $font-macmillan;
+    font-size: 28px;
+}

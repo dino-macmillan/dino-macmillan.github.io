@@ -1,0 +1,60 @@
+.cookies {
+    display: none;
+
+    &.cookies--no-consent {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 900;
+        display: block;
+        width: 100%;
+        padding: 15px;
+        background-color: $color-brand-green-lt;
+        color: $color-white;
+        animation: slide_in 0.5s normal forwards ease-in-out;
+
+        @media screen and (min-width: $screen-sm-min) {
+            display: table;
+        }
+    }
+}
+
+.cookies__info {
+    @media screen and (min-width: $screen-sm-min) {
+        display: table-cell;
+        vertical-align: middle;
+        width: 80%;
+    }
+
+    p {
+        margin-bottom: 3px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    a,
+    a:visited {
+        color: $color-white;
+    }
+}
+
+.cookies__action {
+    @media screen and (min-width: $screen-sm-min) {
+        display: table-cell;
+        vertical-align: middle;
+        width: 20%;
+        text-align: right;
+    }
+}
+
+@keyframes slide_in {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

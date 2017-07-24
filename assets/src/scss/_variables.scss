@@ -1,0 +1,111 @@
+// BREAKPOINT DEFINITIONS =========================================================================
+$screen-xs:                                        480px !default;
+$screen-xs-min:                                    $screen-xs !default;
+$screen-phone:                                     $screen-xs-min !default;
+
+// Small screen / tablet
+$screen-sm:                                        768px !default;
+$screen-sm-min:                                    $screen-sm !default;
+$screen-tablet:                                    $screen-sm-min !default;
+
+// Medium screen / desktop
+$screen-md:                                        992px !default;
+$screen-md-min:                                    $screen-md !default;
+$screen-desktop:                                   $screen-md-min !default;
+
+// Large screen / wide desktop
+$screen-lg:                                        1200px !default;
+$screen-lg-min:                                    $screen-lg !default;
+$screen-lg-desktop:                                $screen-lg-min !default;
+
+// max-widths for when things get hacky
+$screen-xs-max:                                    ($screen-sm-min - 1) !default;
+$screen-sm-max:                                    ($screen-md-min - 1) !default;
+$screen-md-max:                                    ($screen-lg-min - 1) !default;
+
+
+// GRID ===========================================================================================
+$grid-columns:                                     12 !default;
+$grid-gutter-width:                                20px !default;
+$grid-float-breakpoint:                            $screen-sm-min !default;
+$grid-float-breakpoint-max:                        ($grid-float-breakpoint - 1) !default;
+
+
+// CONTAINER ======================================================================================
+
+// Small screen / tablet
+$container-tablet:                                 (720px + $grid-gutter-width) !default;
+$container-sm:                                     $container-tablet !default;
+
+// Medium screen / desktop
+$container-desktop:                                (940px + $grid-gutter-width) !default;
+$container-md:                                     $container-desktop !default;
+
+// Large screen / wide desktop
+$container-large-desktop:                          (1024px + $grid-gutter-width) !default;
+$container-lg:                                     $container-large-desktop !default;
+
+// SPACERS ========================================================================================
+$spacer-full-height:                                40px;
+$spacer-half-height:                                $spacer-full-height / 2;
+
+// TYPOGRAPHY =====================================================================================
+
+// currently server from typekit, but will be updated
+$font-futura-medium:                                "futuraMedium", sans-serif;
+$font-futura-heavy:                                 "futuraHeavy", sans-serif;
+
+$font-avenir-book:                                  "avenirBook", sans-serif;
+$font-avenir-heavy:                                 "avenirHeavy", sans-serif;
+
+$font-macmillan:                                    "macmillan";
+
+// SWATCHES =======================================================================================
+
+// global
+$color-white:                                       #FFF;
+
+// text
+$color-text-light:                                  #a19f91;
+$color-text:                                        #666666;
+
+// brand
+$color-brand-green:                                 #005c46;
+$color-brand-green-lt:                              #8cc63f;
+$color-brand-purple:                                #682c88;
+
+// backgrounds
+$color-khaki-bg:                                    #dad9d3;
+$color-gray-bg:                                     #e2e6e8;
+
+// footer
+$color-footer-text:                                 #67665f;
+$color-footer-stroke:                               #b7b7b7;
+$color-footer-stroke-alt:                           #a19f91;
+
+// specific misc
+$color-toggle-btn:                                  #c7cdd1;
+$color-error:                                       #e32333;
+$color-success:                                     $color-brand-green-lt;
+
+// ================================================================================================
+// ================================================================================================
+//
+// COMPONENTS
+//
+// ================================================================================================
+// ================================================================================================
+
+// HERO ===========================================================================================
+$hero-height:                                       280px;
+$hero-height-mobile:                                $hero-height;
+$hero-height-tablet:                                210px;
+$hero-height-desktop:                               284px;
+
+$hero-background-color:                             #9ba4ab;
+
+// PROGRESS BAR ===================================================================================
+$progress-background:                                #c6cdd0;
+$progress-bar-color:                                $color-brand-purple;
+$progress-bar-height:                               10px;
+$progress-bar-height-sm:                            6px;

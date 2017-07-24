@@ -1,0 +1,74 @@
+html,
+body {
+    background-color: $color-khaki-bg;
+}
+
+.main {
+    display: block;
+    padding: $spacer-full-height 0;
+    margin: 0;
+    min-height: 300px;
+    background-color: $color-gray-bg;
+}
+
+.container {
+  @include container-fixed;
+
+  @media (min-width: $screen-sm-min) {
+    width: $container-sm;
+  }
+  @media (min-width: $screen-md-min) {
+    width: $container-md;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}
+
+.container-fluid {
+  @include container-fixed;
+}
+
+.row {
+  @include make-row;
+}
+
+@include make-grid-columns;
+
+@include make-grid(xs);
+
+@media (min-width: $screen-sm-min) {
+  @include make-grid(sm);
+}
+
+@media (min-width: $screen-md-min) {
+  @include make-grid(md);
+}
+
+@media (min-width: $screen-lg-min) {
+  @include make-grid(lg);
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0,0,0,0) !important;
+    border: 0 !important;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

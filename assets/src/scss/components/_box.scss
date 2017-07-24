@@ -1,0 +1,159 @@
+.box,
+.box--purple {
+    position: relative;
+    padding: 0 15px;
+    margin: 13px 0 (16px + ($spacer-full-height / 2));
+    background-color: $color-brand-purple;
+    @include clearfix;
+
+    @media screen and (min-width: $screen-md-min) {
+        margin-bottom: 16px;
+    }
+
+    .icon:before {
+        color: $color-brand-purple;
+    }
+}
+
+.box__top {
+    position: absolute;
+    left: 0;
+    top: -12px;
+    display: block;
+    width: 100%;
+    height: 13px;
+
+    &:after,
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 95%;
+        height: 13px;
+        background: transparent url('/images/box-sprite.png') no-repeat left 0;
+    }
+
+    &:after {
+        left: auto;
+        right: 0;
+        width: 5%;
+        min-width: 50px;
+        max-width: 100px;
+        background-position: right 0;
+    }
+}
+
+.box__bottom {
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    display: block;
+    width: 100%;
+    height: 16px;
+
+    &:after,
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 95%;
+        height: 16px;
+        background: transparent url('/images/box-sprite.png') no-repeat left -13px;
+    }
+
+    &:after {
+        left: auto;
+        right: 0;
+        width: 5%;
+        min-width: 50px;
+        max-width: 100px;
+        background-position: right -13px;
+    }
+}
+
+.box__heading {
+    margin: 0 0 20px;
+    color: $color-white;
+    font-family: $font-futura-medium;
+    font-size: 20px;
+
+    @media screen and (min-width: $screen-md-min) {
+        font-size: 28px;
+    }
+}
+
+.box__heading--small {
+    margin-bottom: 15px;
+    color: $color-brand-green;
+    font-size: 16px;
+
+    @media screen and (min-width: $screen-md-min) {
+        font-size: 22px;
+    }
+}
+
+// modifiers
+
+.box--green {
+    background-color: $color-brand-green-lt;
+
+    .box__top {
+
+        &:before {
+            background-position: left -29px;
+        }
+
+        &:after {
+            background-position: right -29px;
+        }
+    }
+
+    .box__bottom {
+
+        &:before {
+            background-position: left -42px;
+        }
+
+        &:after {
+            background-position: right -42px;
+        }
+    }
+
+    .icon:before {
+        color: $color-brand-green-lt;
+    }
+}
+
+.box--green-dk {
+    background-color: $color-brand-green;
+
+    .box__top {
+
+        &:before {
+            background-position: left -58px;
+        }
+
+        &:after {
+            background-position: right -58px;
+        }
+    }
+
+    .box__bottom {
+
+        &:before {
+            background-position: left -71px;
+        }
+
+        &:after {
+            background-position: right -71px;
+        }
+    }
+
+    .icon:before {
+        color: $color-brand-green;
+    }
+}

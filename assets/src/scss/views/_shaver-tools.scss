@@ -1,0 +1,8 @@
+body.page--tools {
+
+    .main {
+        @media screen and (min-width: $screen-md-min) {
+            font-size: 20px;
+        }
+    }
+}

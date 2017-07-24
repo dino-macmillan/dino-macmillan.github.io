@@ -1,0 +1,280 @@
+.hero {
+    display: block;
+    width: 100%;
+    height: 1px;
+    min-height: $hero-height-mobile;
+    margin-bottom: $spacer-half-height;
+    background: $hero-background-color url('/images/hero-gradient-gray.png') repeat-x center top;
+    background-size: 5px 500px;
+
+    @media screen and (min-width: $screen-sm-min) {
+        min-height: $hero-height-tablet;
+        background-size: 5px 500px;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        min-height: $hero-height-desktop;
+    }
+}
+
+.hero__container {
+    position: relative;
+    z-index: 100;
+    @extend .container;
+}
+
+.hero__content {
+    overflow-x: hidden;
+}
+
+// home page hero
+.hero--home {
+    height: auto;
+    background-image: url('/images/hero-gradient-home.jpg');
+    background-size: 2px 360px;
+    background-position: center bottom;
+    background-color: #b3b5c1;
+
+    @media screen and (min-width: $screen-sm-min) {
+        height: 1px;
+        min-height: $hero-height-tablet;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        min-height: $hero-height-desktop;
+    }
+
+    .hero__container {
+        height: auto;
+        padding-top: 170px;
+        font-size: 0;
+
+        @media screen and (min-width: 500px) {
+            padding-top: 160px;
+        }
+
+        @media screen and (min-width: 600px) {
+            padding-top: 130px;
+        }
+
+        @media screen and (min-width: $screen-sm-min) {
+            padding-top: 0;
+            height: $hero-height-tablet;
+        }
+
+        @media screen and (min-width: $screen-md-min) {
+            height: $hero-height-desktop;
+        }
+    }
+
+    .hero__image {
+        position: static;
+        width: 100%;
+        text-align: center;
+
+        @media screen and (min-width: $screen-sm-min) {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+        }
+
+        img {
+            display: inline-block;
+            height: auto;
+            width: 100%;
+
+            @media screen and (min-width: $screen-sm-min) {
+                height: $hero-height-tablet + 20px;
+                width: auto;
+            }
+
+            @media screen and (min-width: $screen-md-min) {
+                height: $hero-height-desktop + 40px;
+            }
+        }
+    }
+
+    .hero__content {
+        position: absolute;
+        z-index: 120;
+        top: 20px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+
+        @media screen and (min-width: $screen-sm-min) {
+            top: 20px;
+        }
+
+        @media screen and (min-width: $screen-md-min) {
+            top: 30px;
+        }
+
+        p {
+            color: $color-white;
+            font-family: $font-futura-heavy;
+            font-size: 20px;
+
+            @media screen and (min-width: $screen-sm-min) {
+                font-size: 20px;
+            }
+
+            @media screen and (min-width: $screen-md-min) {
+                font-size: 24px;
+            }
+        }
+
+        .row {
+            p {
+                padding: 0 15px;
+
+                @media screen and (min-width: $screen-sm-min) {
+                    padding: 0 215px;
+                }
+
+                @media screen and (min-width: $screen-md-min) {
+                    padding: 0 125px;
+                }
+
+                @media screen and (min-width: $screen-lg-min) {
+                    padding: 0 70px;
+                }
+            }
+        }
+
+        .button {
+            font-family: $font-macmillan;
+        }
+    }
+}
+
+.hero--thank-you {
+    margin-bottom: $spacer-full-height;
+    height: auto;
+    background-size: cover;
+
+    @media screen and (min-width: $screen-sm-min) {
+        height: 1px;
+    }
+
+    .hero__container {
+        //height: $hero-height-mobile;
+        height: auto;
+        font-size: 0;
+
+        @media screen and (min-width: $screen-sm-min) {
+            height: $hero-height-tablet;
+        }
+
+        @media screen and (min-width: $screen-md-min) {
+            height: $hero-height-desktop;
+        }
+    }
+
+    .hero__image {
+        text-align: left;
+
+        @media screen and (min-width: $screen-sm-min) {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 90%;
+        }
+
+        img {
+            display: inline-block;
+            height: auto;
+            width: 100%;
+
+            @media screen and (min-width: $screen-sm-min) {
+                height: $hero-height-tablet + 20px;
+                width: auto;
+            }
+
+            @media screen and (min-width: $screen-md-min) {
+                height: $hero-height-desktop + 40px;
+            }
+        }
+    }
+
+    .hero__content {
+        width: 100%;
+        text-align: center;
+
+        @media screen and (min-width: $screen-sm-min) {
+            position: absolute;
+            z-index: 120;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+.hero--donation-success {
+    position: relative;
+    margin-bottom: 200px;
+    background: $hero-background-color url('/images/hero-donation-thank-you-mobile.jpg') no-repeat center center;
+    background-size: cover;
+
+    @media screen and (min-width: $screen-sm-min) {
+        position: static;
+        margin-bottom: 40px;
+        background: $hero-background-color url('/images/hero-gradient-gray.png') repeat-x center top;
+        background-size: 5px 500px;
+    }
+
+    .hero__container {
+        position: absolute;
+        height: $hero-height-mobile;
+        font-size: 0;
+        text-align: center;
+        bottom: -$hero-height-mobile - 10px;
+
+        @media screen and (max-width: $screen-xs-max) {
+            width: 100%;
+        }
+
+        @media screen and (min-width: $screen-sm-min) {
+            position: relative;
+            height: $hero-height-tablet;
+            text-align: left;
+            bottom: initial;
+        }
+
+        @media screen and (min-width: $screen-md-min) {
+            height: $hero-height-desktop;
+        }
+    }
+
+    .hero__image {
+        display: none;
+
+        @media screen and (min-width: $screen-sm-min) {
+            position: absolute;
+            bottom: 0;
+            display: block;
+            width: 90%;
+            padding-left: 30px;
+        }
+
+        img {
+            display: inline-block;
+            height: auto;
+            width: 100%;
+
+            @media screen and (min-width: $screen-sm-min) {
+                height: $hero-height-tablet + 20px;
+                width: auto;
+            }
+
+            @media screen and (min-width: $screen-md-min) {
+                height: $hero-height-desktop + 40px;
+            }
+        }
+    }
+
+    .hero__content {
+        padding-top: 20px;
+    }
+}

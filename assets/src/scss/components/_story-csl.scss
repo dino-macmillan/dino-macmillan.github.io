@@ -1,0 +1,166 @@
+/**
+ * This component relies on external dependency styles to be found in vendor/_slick.scss
+ * please do not overwrite styles in vendor/_slick.scss - please include any overrides in here
+ */
+
+.story-csl {
+
+}
+
+.story-csl__item {
+
+}
+
+// revert to using scope of '.story' for each item in the carousel to avoid class names getting massive
+.story {
+    position: relative;
+    margin: 0 -25px;
+    padding: 25px 20px;
+    background-color: $color-white;
+    transform: scale(0.8);
+    transition: all 300ms ease-in-out;
+
+    @media screen and (min-width: $screen-sm-min) {
+        margin: 0 -25px;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        margin: 0 -50px;
+    }
+
+    p {
+        font-size: 9px;
+        color: $color-text;
+
+        @media screen and (min-width: $screen-sm-min) {
+            font-size: 16px;
+        }
+    }
+}
+
+.story__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+// slick active class is controlled by slick slider plugin
+.slick-current {
+
+    .story {
+        margin: 0;
+        transform: scale(1);
+    }
+
+    .story__overlay {
+        display: none;
+    }
+}
+
+.story__actions {
+    margin-top: $spacer-half-height;
+    font-size: 0;
+
+    @media screen and (min-width: $screen-sm-min) {
+        margin-top: 0;
+    }
+
+    .button {
+        margin-bottom: 5px;
+        font-family: $font-macmillan;
+        font-size: 16px;
+        letter-spacing: 1px;
+
+        @media screen and (min-width: $screen-sm-min) {
+            width: 48%;
+            width: calc(50% - 5px);
+            padding-left: 2px;
+            padding-right: 2px;
+            margin-bottom: 0;
+            font-size: 24px;
+        }
+
+        &:first-child {
+            margin-right: 10px;
+        }
+    }
+}
+
+.story__name {
+    display: block;
+    margin: 0 0 ($spacer-full-height / 2);
+    text-align: center;
+    font-size: 16px;
+    font-family: $font-futura-medium;
+    color: $color-brand-green;
+
+    @media screen and (min-width: $screen-sm-min) {
+        font-size: 24px;
+    }
+}
+
+.story__for {
+    display: block;
+    margin: 0;
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-family: $font-macmillan;
+    color: $color-brand-green-lt;
+
+    @media screen and (min-width: $screen-sm-min) {
+        font-size: 24px;
+    }
+}
+
+.story__subheading {
+    display: block;
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    font-family: $font-futura-medium;
+    color: $color-brand-green;
+    font-size: 16px;
+}
+
+.story__avatar {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    margin-bottom: $spacer-full-height / 2;
+
+    > span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 50%;
+        background: #dde1e3 url('/images/brave-shaver-placeholder.png') no-repeat center center;
+        background-size: cover;
+    }
+}
+
+.story-csl__button {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    z-index: 1;
+    display: block;
+    width: 46px;
+    height: 46px;
+    margin-top: -23px;
+    border: none;
+    background: transparent url('/images/carousel-nav-sprite.png') no-repeat 0 0;
+    box-shadow: none;
+}
+
+.story-csl__button--next {
+    background-position: 0 -46px;
+    left: auto;
+    right: 20px;
+}

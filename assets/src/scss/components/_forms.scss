@@ -1,0 +1,296 @@
+// forms ==========================================================================================
+.form {
+    display: block;
+    @include clearfix;
+}
+
+fieldset {
+    padding: $spacer-full-height 0 0 0;
+    border: none;
+}
+
+.form-group {
+    padding: $spacer-full-height 0 0 0;
+    margin: $spacer-full-height 0 0 0;
+    border: none;
+    border-top: 4px solid $color-white;
+}
+
+.form-group--no-border {
+    padding-top: 0;
+    border: none;
+}
+
+// fields =========================================================================================
+.field {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #7b7a6d;
+    background-color: $color-white;
+    background-image: none;
+    border: none;
+    border-radius: 6px;
+}
+
+textarea.field {
+    height: auto;
+    min-height: 100px;
+}
+
+.field__label {
+    display: inline-block;
+    margin-bottom: 10px;
+
+    @media screen and (min-width: $screen-sm-min) {
+        margin-bottom: 0;
+    }
+}
+
+.field__hint {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.field-text {
+    line-height: 34px;
+}
+
+.field-text--large {
+    line-height: 44px;
+}
+
+.field-row {
+    margin-bottom: $spacer-half-height;
+
+    @include clearfix;
+
+    &:not(.field-row--horizontal) {
+        .field__label {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.field--hidden {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    opacity: 0;
+    clip: rect(0,0,0,0);
+    pointer-events: none;
+}
+
+.field-row--horizontal {
+    @extend .row;
+
+    @media screen and (max-width: $screen-xs-max) {
+        margin-bottom: 10px;
+    }
+
+    .field__label {
+        line-height: 34px;
+
+        @media screen and (max-width: $screen-xs-max) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.field-row--hidden {
+    display: none;
+}
+
+// field groups (adjoined fields and buttons)
+.field-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+
+    // nested because these elements must only ever co-exist
+
+    .field {
+        z-index: 2;
+        display: table-cell;
+        float: left;
+        width: 100%;
+        margin-bottom: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .field-group__button {
+        position: relative;
+        display: table-cell;
+        width: 1%;
+        vertical-align: middle;
+        font-size: 0;
+        white-space: nowrap;
+    }
+
+    .button {
+        display: block;
+        height: 34px;
+        padding: 0 6px 0 12px;
+        margin: 0;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        background-color: $color-white;
+        color: $color-brand-purple;
+        font-size: 14px;
+        line-height: 34px;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        touch-action: manipulation;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    &.field-group--lg {
+        .field {
+            height: 44px;
+
+            @media screen and (min-width: $screen-sm-min) {
+                font-size: 20px;
+            }
+        }
+
+        .button {
+            height: 44px;
+            line-height: 44px;
+        }
+    }
+}
+
+.field-addon {
+    position: relative;
+
+    .field {
+        position: relative;
+        z-index: 1;
+        padding-left: 30px;
+    }
+
+    .field-addon__addon {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 10px;
+        display: block;
+        height: 34px;
+        width: auto;
+        line-height: 34px;
+    }
+
+    &.field-addon--large {
+        .field {
+            height: 44px;
+            font-family: $font-futura-heavy;
+            color: $color-text-light;
+
+            @media screen and (min-width: $screen-sm-min) {
+                font-size: 20px;
+            }
+
+            &::-webkit-input-placeholder {
+                font-family: $font-futura-heavy;
+                color: $color-text-light;
+            }
+            &::-moz-placeholder {
+                font-family: $font-futura-heavy;
+                color: $color-text-light;
+            }
+            &:-ms-input-placeholder {
+                font-family: $font-futura-heavy;
+                color: $color-text-light;
+            }
+            &:-moz-placeholder {
+                font-family: $font-futura-heavy;
+                color: $color-text-light;
+            }
+        }
+
+        .field-addon__addon {
+            height: 44px;
+            line-height: 44px;
+            font-family: $font-futura-heavy;
+            color: $color-text-light;
+
+            @media screen and (min-width: $screen-sm-min) {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+// checkbox
+.checkbox,
+.radio {
+    position: relative;
+    display: block;
+
+    > label {
+        display: inline-block;
+        max-width: 100%;
+        min-height: 20px;
+        padding-left: 20px;
+        margin-bottom: 0;
+        font-weight: normal;
+        cursor: pointer;
+    }
+
+    input[type=checkbox],
+    input[type=radio] {
+        position: absolute;
+        margin-top: 2px;
+        margin-left: -20px;
+    }
+}
+
+.field-row--error {
+    .field__label {
+        color: $color-error;
+    }
+
+    .field {
+        background-color: lighten($color-error, 35%);
+        color: $color-error;
+    }
+
+    .field__hint {
+        color: $color-error;
+    }
+}
+
+.field-row--warning {
+    .field {
+        border: 2px solid $color-error;
+    }
+
+    .field__hint {
+        color: $color-error;
+    }
+}
+
+.field--error {
+    background-color: lighten($color-error, 35%) !important;
+    color: $color-error !important;
+
+    + .field-addon__addon {
+        color: $color-error !important;
+    }
+}
+
+.field__hint--error {
+    color: $color-error;
+}

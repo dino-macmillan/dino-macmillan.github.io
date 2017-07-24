@@ -1,0 +1,154 @@
+.header {
+    display: block;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $color-white;
+}
+
+.header__column {
+
+}
+
+
+
+// requires modernizr to append .flexbox to the html element in flex supporting browsers
+.flexbox {
+    .header__column {
+        @media screen and (min-width: $screen-md-min) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            min-height: 75px;
+            // IE requires a height value to align vertical centre
+            height: 75px;
+        }
+
+        &.header__column--actions {
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+.header__column--logo {
+    @extend .col-xs-10;
+    @extend .col-xs-offset-1;
+    @extend .col-sm-4;
+    @extend .col-sm-offset-0;
+    @extend .col-md-2;
+    padding-top: 24px;
+    padding-bottom:20px;
+    
+    @media screen and (max-width: $screen-sm-min) {
+      display: none;
+    }
+
+    @media screen and (min-width: $screen-sm-min) {
+        float: left;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    a {
+        display: block;
+        width: 100%;
+        height: auto;
+
+        @media screen and (min-width: $screen-md-min) {
+            max-width: 100px;
+        }
+
+        img {
+            max-width: initial;
+            width: 100%;
+        }
+    }
+}
+
+.header__column--actions {
+    @extend .col-xs-10;
+    @extend .col-sm-4;
+    @extend .col-md-2;
+    padding-top:18px;
+    font-size: 0;
+
+    @media screen and (min-width: $screen-sm-min) {
+        float: right;
+        text-align: right;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        text-align: left;
+    }
+
+    .button {
+        @media screen and (min-width: $screen-sm-min) {
+            padding-left: 15px;
+            padding-right: 15px;
+            white-space: nowrap;
+        }
+
+        &:first-child {
+            margin-right: 10px;
+        }
+    }
+}
+
+.flexbox {
+    .header__column--actions {
+        padding-top: 0;
+    }
+}
+
+.header__column--toggle-nav {
+    @extend .col-xs-2;
+    @extend .col-sm-1;
+    float: right;
+    padding-top: 18px;
+
+    @media screen and (min-width: $screen-md-min) {
+        display: none;
+    }
+}
+
+.flexbox {
+    .header__column--toggle-nav {
+        padding-top: 0;
+
+        @media screen and (min-width: $screen-md-min) {
+            display: none;
+        }
+    }
+}
+
+.header__column--nav {
+    @extend .col-xs-12;
+    @extend .col-md-8;
+    @extend .col-sm-12;
+    padding-top: 24px;
+}
+
+.flexbox {
+    .header__column--nav {
+        padding-top: 0;
+
+        & ~ .header__column--logo {
+          display: block;
+          padding-bottom: 0;
+
+           @media screen and (min-width: $screen-sm-min) {
+            display: none;
+          }
+        }
+    }
+}
+
+.no-flexbox {
+    .header__column--actions {
+        .button {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.share {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.share__heading {
+    position: relative;
+    top: -4px;
+    display: block;
+    color: $color-white;
+    font-family: $font-futura-heavy;
+    font-size: 16px;
+
+    @media screen and (min-width: $screen-sm-min) {
+        display: inline-block;
+        font-size: 18px;
+    }
+}
+
+.share__button {
+    @extend .button;
+    top: 2px;
+    width: 28px;
+    padding: 2px 0;
+    margin: 0 5px;
+    font-size: 22px;
+    color: $color-white;
+
+    @media screen and (min-width: $screen-md-min) {
+        font-size: 28px;
+    }
+}
+
+.share__hidden {
+    display: none !important;
+}

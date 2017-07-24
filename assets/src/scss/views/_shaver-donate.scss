@@ -1,0 +1,19 @@
+body.page--shaver-donate {
+
+    .giftaid-wrapper {
+        background: transparent url('/images/giftaid.png') no-repeat right top;
+        background-size: 150px auto;
+
+        p {
+            padding-right: 180px;
+        }
+
+        .checkbox {
+            > label {
+                @media screen and (min-width: $screen-sm-min) {
+                    padding-right: 180px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+.shaver__avatar {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    border: 10px solid $color-white;
+
+    > span {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #dde1e3 url('/images/brave-shaver-placeholder.png') no-repeat center center;
+        background-size: cover;
+    }
+}
+
+.shaver__avatar-label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: $color-white;
+    font-family: $font-macmillan;
+    font-size: 24px;
+
+    @media screen and (min-width: $screen-md-min) {
+        font-size: 36px;
+    }
+
+    &.shaver__avatar-label--placeholder {
+        top: 32%;
+        left: 0;
+        bottom: auto;
+        display: block;
+        width: 100%;
+        color: $color-brand-green;
+        text-align: center;
+        font-size: 36px;
+
+        @media screen and (min-width: $screen-sm-min) {
+            top: 80px;
+        }
+
+        @media screen and (min-width: $screen-md-min) {
+            top: 88px;
+        }
+
+        @media screen and (min-width: $screen-lg-min) {
+            top: 90px;
+        }
+
+        > span {
+            display: block;
+            color: $color-brand-purple;
+        }
+    }
+}
+
+.shaver__updates {
+
+}
+
+.shaver__update-item {
+
+    &:not(:first-child) {
+        padding-top: $spacer-half-height;
+        margin-top: $spacer-half-height;
+        border-top: 2px solid $color-brand-green;
+    }
+
+    p {
+        font-size: 14px;
+        color: $color-brand-green;
+
+        @media screen and (min-width: $screen-sm-min) {
+            font-size: 18px;
+        }
+    }
+}

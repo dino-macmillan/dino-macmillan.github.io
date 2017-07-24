@@ -1,0 +1,71 @@
+// variables
+@import "variables";
+
+// vendor
+@import "vendor/slick";
+@import "vendor/nice-select";
+@import "vendor/nice-select-override";
+@import "vendor/croppie";
+@import "vendor/croppie-override";
+@import "vendor/datepicker";
+@import "vendor/datepicker-overrides";
+@import "vendor/bootstrap-modal";
+
+// mixins
+@import "mixins/clearfix";
+@import "mixins/grid-framework";
+@import "mixins/grid";
+@import "mixins/responsive-visibility";
+
+// base
+@import "base/normalize";
+@import "base/structure";
+@import "base/responsive-utilities";
+@import "base/webfonts";
+@import "base/typography";
+@import "base/icons";
+
+// components - aims to contain reusable global styles
+@import "components/header";
+@import "components/footer";
+@import "components/nav";
+@import "components/buttons";
+@import "components/macmillan-heading";
+@import "components/share";
+@import "components/forms";
+@import "components/toggle";
+@import "components/flash";
+@import "components/progress";
+@import "components/hero";
+@import "components/box";
+@import "components/stats";
+@import "components/carousel";
+@import "components/story-csl";
+@import "components/category-switch";
+@import "components/shv-grid";
+@import "components/shaver";
+@import "components/supporters";
+@import "components/tools";
+@import "components/icon-list";
+@import "components/downloads";
+@import "components/cookies";
+@import "components/value-list";
+// spacers last
+@import "components/spacers";
+
+// views - contains any page specific styles and one-off overrides that are not worth adding a --modifier for.
+// anything in here which is re-used across multiple pages should proably form a component above
+// all view specific styles in here should be scoped to a body class to insulate the global pattern
+@import "views/home";
+@import "views/faqs";
+@import "views/404";
+@import "views/join";
+@import "views/forgot-password";
+@import "views/thank-you-shaver";
+@import "views/search-results";
+@import "views/shaver-donate";
+@import "views/donation-payment-successful";
+@import "views/edit-shave-page";
+@import "views/about";
+@import "views/shaver-tools";
+@import "views/how-it-helps";

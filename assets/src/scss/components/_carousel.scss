@@ -1,0 +1,149 @@
+.carousel {
+    margin-bottom: 60px;
+}
+
+.carousel__inner {
+    position: relative;
+    z-index: 1;
+    padding: 315px 30px 30px;
+    background-color: $color-white;
+
+    @media screen and (min-width: 480px) {
+        padding-top: 385px;
+    }
+
+    @media screen and (min-width: 650px) {
+        padding-top: 465px;
+    }
+
+    @media screen and (min-width: $screen-sm-min) {
+        padding: 15px 10% 15px 53%;
+        padding-left: calc(50% + 15px);
+    }
+
+    @media screen and (min-width: $screen-sm-min) {
+        min-height: 310px;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        min-height: 375px;
+    }
+
+    // CMS requires less organised CSS...
+
+    p {
+        // attempt to keep up with random font sizes....
+        color: $color-brand-green;
+        font-size: 20px;
+
+        @media screen and (min-width: $screen-sm-min) {
+            font-size: 14px;
+        }
+
+        @media screen and (min-width: $screen-md-min) {
+            font-size: 16px;
+        }
+    }
+
+    a {
+        color: $color-brand-green;
+        font-family: $font-futura-heavy;
+        text-decoration: none;
+        font-size: 20px;
+
+        @media screen and (min-width: $screen-sm-min) {
+            font-size: 14px;
+        }
+
+        @media screen and (min-width: $screen-md-min) {
+            font-size: 16px;
+        }
+    }
+
+    h4 {
+        font-family: $font-futura-heavy;
+        font-size: 24px;
+
+        @media screen and (min-width: $screen-sm-min) {
+            display: block;
+            width: 100%;
+            padding: 15px 10px;
+            margin: 0 0 20px 0;
+            background: transparent url('/images/carousel-heading.png') no-repeat center center;
+            background-size: 100% 100%;
+            text-align: center;
+            font-family: $font-macmillan;
+            font-size: 20px;
+            line-height: 1.35;
+            color: $color-white;
+        }
+
+        @media screen and (min-width: $screen-md-min) {
+            padding: 30px 20px;
+            font-size: 28px;
+        }
+    }
+}
+
+.carousel__image {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: transparent none no-repeat center top;
+    background-size: cover;
+
+    @media screen and (min-width: 480px) {
+        height: 370px;
+    }
+
+    @media screen and (min-width: 650px) {
+        height: 450px;
+    }
+
+    @media screen and (min-width: $screen-sm-min) {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: auto;
+        display: block;
+        width: 50%;
+        height: 100%;
+    }
+}
+
+.carousel__button {
+    position: absolute;
+    top: 127px;
+    left: 10px;
+    z-index: 1;
+    display: block;
+    width: 46px;
+    height: 46px;
+    border: none;
+    background: transparent url('/images/carousel-nav-sprite.png') no-repeat -47px 0;
+    box-shadow: none;
+
+    @media screen and (min-width: 480px) {
+        top: 162px;
+    }
+
+    @media screen and (min-width: 650px) {
+        top: 202px;
+    }
+
+    @media screen and (min-width: $screen-sm-min) {
+        top: 50%;
+        left: 10px;
+        margin-top: -23px;
+    }
+}
+
+.carousel__button--next {
+    background-position: -47px -46px;
+    left: auto;
+    right: 10px;
+}

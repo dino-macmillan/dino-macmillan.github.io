@@ -1,0 +1,109 @@
+//  Fonts
+//  -----
+
+//  Macmillan Font
+//  --------------
+@font-face {
+  font-family: 'macmillan';
+  src: url('/fonts/macmillan_font.eot');
+  src: url('/fonts/macmillan_font.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/macmillan_font.woff') format('woff'),
+    url('/fonts/macmillan_font.ttf') format('truetype'),
+    url('/fonts/macmillan_font.svg#macmillan_font') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+//  Icon Font
+//  ---------
+@font-face {
+  font-family: 'iconFont';
+  src: url('/fonts/icomoon.eot?');
+  src: url('/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/icomoon.ttf') format('truetype'),
+    url('/fonts/icomoon.woff') format('woff'),
+    url('/fonts/icomoon.svg?#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//  Source Sans Light
+//  -----------------
+@font-face {
+  font-family: 'source_sans_light';
+  src: url('/fonts/sourcesanspro-light-webfont.eot');
+  src: url('/fonts/sourcesanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/sourcesanspro-light-webfont.woff2') format('woff2'),
+    url('/fonts/sourcesanspro-light-webfont.woff') format('woff'),
+    url('/fonts/sourcesanspro-light-webfont.ttf') format('truetype'),
+    url('/fonts/sourcesanspro-light-webfont.svg#source_sans_prolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//
+//  Avenir Fonts
+//  ------------
+//
+
+// Avenir Book
+@font-face {
+  font-family: 'avenirBook';
+  src: url('/fonts/avenir_book.eot?');
+  src: url('/fonts/avenir_book.eot?#iefix') format('embedded-opentype'), url('/fonts/avenir_book.woff') format('woff'), url('/fonts/avenir_book.ttf') format('truetype'), url('/fonts/avenir_book.svg#avenir_book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Avenir Medium
+@font-face{
+  font-family: 'avenirMedium';
+  src: url('/fonts/avenir_medium.eot?');
+  src: url('/fonts/avenir_medium.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/avenir_medium.woff') format('woff'),
+    url('/fonts/avenir_medium') format('truetype'),
+    url('/fonts/avenir_medium.svg#avenir_medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Avenir Heavy
+@font-face {
+  font-family: 'avenirHeavy';
+  src: url('/fonts/avenir_heavy.eot?');
+  src: url('/fonts/avenir_heavy.eot?#iefix') format('embedded-opentype'), url('/fonts/avenir_heavy.woff') format('woff'), url('/fonts/avenir_heavy.ttf') format('truetype'), url('/fonts/avenir_heavy.svg#avenir_heavy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//
+//  Futura Fonts
+//  ------------
+//
+
+// Futura Book
+@font-face {
+  font-family: 'futuraBook';
+  src: url('/fonts/futura_book.eot?');
+  src: url('/fonts/futura_book.eot?#iefix') format('embedded-opentype'), url('/fonts/futura_book.woff') format('woff'), url('/fonts/futura_book.ttf') format('truetype'), url('/fonts/futura_book.svg#futura_book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Futura Medium
+@font-face {
+  font-family: 'futuraMedium';
+  src: url('/fonts/futura_medium.eot?');
+  src: url('/fonts/futura_medium.eot?#iefix') format('embedded-opentype'), url('/fonts/futura_medium.woff') format('woff'), url('/fonts/futura_medium.ttf') format('truetype'), url('/fonts/futura_medium.svg#futura_medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Futura Heavy
+@font-face {
+  font-family: 'futuraHeavy';
+  src: url('/fonts/futura_heavy.eot?');
+  src: url('/fonts/futura_heavy.eot?#iefix') format('embedded-opentype'), url('/fonts/futura_heavy.woff') format('woff'), url('/fonts/futura_heavy.ttf') format('truetype'), url('/fonts/futura_heavy.svg#futura_heavy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

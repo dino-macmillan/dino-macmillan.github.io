@@ -1,0 +1,63 @@
+.icon-list {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none outside none;
+    @include clearfix;
+
+    @media screen and (min-width: $screen-sm-min) {
+
+    }
+}
+
+.icon-list__item {
+    position: relative;
+    display: block;
+    padding: 10px 0 10px 45px;
+    color: $color-brand-green;
+    font-family: $font-futura-medium;
+    font-size: 16px;
+    line-height: 1.2;
+
+    @media screen and (min-width: $screen-sm-min) {
+        padding: 15px 0 15px 45px;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        padding: 20px 0 20px 55px;
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: $screen-lg-min) {
+        padding: 20px 0 20px 64px;
+        font-size: 20px;
+    }
+}
+
+.icon-list__icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+
+    @media screen and (min-width: $screen-sm-min) {
+        width: 30px;
+        height: 30px;
+        margin-top: -15px;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+    }
+
+    @media screen and (min-width: $screen-lg-min) {
+        width: 44px;
+        height: 44px;
+        margin-top: -22px;
+    }
+}

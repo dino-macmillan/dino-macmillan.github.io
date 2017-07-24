@@ -1,0 +1,29 @@
+body.page--faqs {
+    .button--large {
+        padding: 37px 5px;
+        font-size: 36px;
+
+        @media screen and (min-width: $screen-sm-min) {
+            padding-top: 46px;
+            padding-bottom: 46px;
+            font-size: 36px;
+        }
+
+        @media screen and (min-width: $screen-md-min) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            font-size: 48px;
+        }
+
+        @media screen and (min-width: $screen-lg-min) {
+            padding-top: 37px;
+            padding-bottom: 37px;
+        }
+    }
+
+    .toggle__content {
+        p {
+            color: $color-text;
+        }
+    }
+}

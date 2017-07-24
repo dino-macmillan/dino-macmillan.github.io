@@ -1,0 +1,22 @@
+.progress {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: $progress-bar-height;
+    border-radius: $progress-bar-height / 2;
+    background-color: $progress-background;
+}
+
+.progress__bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: $progress-bar-color;
+    transition: width 500ms ease-in-out;
+}
+
+.progress--small {
+    height: $progress-bar-height-sm;
+    border-radius: $progress-bar-height-sm / 2;
+}

@@ -1,0 +1,55 @@
+.supporters {
+
+}
+
+.supporter {
+    display: block;
+    padding-top: $spacer-half-height;
+    margin: $spacer-half-height 0;
+    border-top: 2px solid $color-white;
+}
+.supporter__message {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: $color-brand-green;
+
+    @media screen and (min-width: $screen-sm-min) {
+        font-size: 18px;
+    }
+}
+
+.supporter__meta {
+    font-size: 14px;
+    color: $color-text;
+
+    @media screen and (min-width: $screen-sm-min) {
+        font-size: 18px;
+    }
+}
+
+.supporter__donation {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    font-family: $font-futura-heavy;
+    font-weight: normal;
+    color: $color-brand-purple;
+    font-size: 18px;
+
+    @media screen and (min-width: $screen-sm-min) {
+        font-size: 24px;
+    }
+}
+
+.supporter__gift-aid {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: $color-brand-green;
+
+    @media screen and (min-width: $screen-sm-min) {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,82 @@
+.nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 300ms ease-in-out;
+    transition-delay: 0s;
+    @include clearfix;
+
+    @media screen and (min-width: $screen-md-min) {
+        // set a high max-height - it wont be achieved, but setting back to initial causes IE probs
+        max-height: 100px;
+    }
+}
+
+.nav--active {
+    max-height: 1000px;
+}
+
+// refers to the list parent which contains the full group of links
+.nav__links {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none outside none;
+    font-family: $font-futura-medium;
+    @include clearfix;
+}
+
+// refers to the list item that houses an individual link
+.nav__link {
+    display: block;
+    
+     @media screen and (max-width: $screen-md-min) {
+        margin-top: 20px;
+     }
+
+    @media screen and (min-width: $screen-md-min) {
+        position: relative;
+        width: auto;
+        float: left;
+    }
+
+    + .nav__link {
+        @media screen and (min-width: $screen-md-min) {
+            padding-left: 8px;
+            margin-left: 8px;
+        }
+
+        @media screen and (min-width: $screen-lg-min) {
+            padding-left: 12px;
+            margin-left: 10px;
+        }
+
+        &:before {
+            @media screen and (min-width: $screen-md-min) {
+                content: "";
+                position: absolute;
+                top: 3px;
+                left: 0;
+                display: block;
+                width: 2px;
+                height: 15px;
+                background-color: $color-brand-green;
+            }
+        }
+    }
+
+    > a {
+        color: $color-brand-green;
+        text-decoration: none;
+
+        @media screen and (max-width: $screen-md-min) {
+          font-size: 24px;
+          text-decoration: underline;
+        }
+    }
+
+    &.nav__link--active {
+        > a {
+            font-family: $font-futura-heavy;
+        }
+    }
+}

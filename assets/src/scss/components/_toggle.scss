@@ -1,0 +1,86 @@
+// a parent wrapper containg many toggle items
+.toggle-list {
+    padding: 0 0 10px 0;
+    margin: 0 0 $spacer-full-height 0;
+    border-bottom: 4px solid $color-white;
+}
+
+.toggle__heading {
+    display: block;
+    padding: 15px 0 5px;
+    margin: 10px 0 0;
+    border-top: 4px solid $color-white;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.toggle__content {
+    display: block;
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    height: auto;
+    overflow: hidden;
+    transition: max-height 200ms ease-in-out;
+}
+
+.toggle__content--border {
+    margin-top: 8px;
+    border-bottom: 4px solid $color-white;
+}
+
+.toggle__link {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0 30px 0 0;
+    font-family: $font-avenir-heavy;
+    color: $color-brand-green;
+    font-size: 20px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:after {
+        content: "\e631";
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        font-family: "iconFont";
+        font-size: 0.8em;
+        color: $color-brand-purple;
+        transform: rotate(0);
+        transition: transform 150ms ease-in-out;
+    }
+}
+
+.toggle__link--purple {
+    color: $color-brand-purple;
+    font-family: $font-macmillan;
+}
+
+.open {
+    .toggle__link:hover {
+        cursor: default;
+    }
+
+    .toggle__link::after {
+        transform: rotate(180deg);
+    }
+
+    &.toggle__content {
+        //max-height: 999px;
+        overflow: visible;
+    }
+}
+
+// form override
+.form {
+    .toggle-list {
+        border: none;
+    }
+}

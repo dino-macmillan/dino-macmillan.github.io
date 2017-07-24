@@ -1,0 +1,711 @@
+// macmillan headings
+.macmillan-heading {
+    display: block;
+    padding: 30px 0 25px;
+    margin: 0 0 $spacer-full-height;
+    background: transparent url('/images/macmillan-headline-alt1.png') no-repeat center center;
+    background-size: 100% auto;
+    text-transform: capitalize;
+
+    @media screen and (min-width: $screen-sm-min) {
+        background-size: initial;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        background-size: 100% auto;
+    }
+
+    @media screen and (min-width: $screen-lg-min) {
+        background-size: initial;
+    }
+
+    span {
+        color: $color-white;
+        text-align: center;
+    }
+
+    > span {
+        display: block;
+        font-size: 30px;
+        line-height: 40px;
+
+        @media screen and (min-width: $screen-sm-min) {
+            font-size: 87px;
+            line-height: 75px;
+        }
+    }
+}
+
+.macmillan-heading--1 {
+    background-image: url('/images/macmillan-headline-alt1.png');
+    text-transform: capitalize;
+
+    > span {
+        padding-left: 40px;
+        font-size: 30px;
+        line-height: 40px;
+
+        @media screen and (min-width: 480px) {
+            font-size: 50px;
+            line-height: 60px;
+        }
+
+        @media screen and (min-width: 650px) {
+            font-size: 70px;
+            line-height: 80px;
+        }
+
+        @media screen and (min-width: $screen-sm-min) {
+            padding-left: 40px;
+            font-size: 87px;
+            line-height: 75px;
+        }
+
+        @media screen and (min-width: $screen-md-min) {
+            font-size: 80px;
+            line-height: 70px;
+        }
+
+        @media screen and (min-width: $screen-lg-min) {
+            padding-left: 40px;
+            font-size: 87px;
+            line-height: 75px;
+        }
+
+        &:first-child {
+            @media screen and (min-width: $screen-md-min) {
+                padding-top: 8px;
+            }
+        }
+    }
+}
+
+.macmillan-heading--2 {
+    background-image: url('/images/macmillan-headline-alt2.png');
+    text-transform: capitalize;
+
+    @media screen and (min-width: $screen-md-min) {
+        background-position: 65% center;
+    }
+
+    @media screen and (min-width: $screen-lg-min) {
+        background-position: 65% center;
+    }
+
+    > span {
+        padding-left: 0;
+        padding-right: 50px;
+        font-size: 30px;
+        line-height: 40px;
+
+        @media screen and (min-width: 480px) {
+            font-size: 50px;
+            line-height: 60px;
+        }
+
+        @media screen and (min-width: 650px) {
+            font-size: 70px;
+            line-height: 80px;
+        }
+
+        @media screen and (min-width: $screen-sm-min) {
+            font-size: 82px;
+            line-height: 72px;
+        }
+
+        @media screen and (min-width: $screen-md-min) {
+            font-size: 80px;
+            line-height: 70px;
+        }
+
+        @media screen and (min-width: $screen-lg-min) {
+            padding-right: 0;
+            font-size: 84px;
+            line-height: 71px;
+        }
+
+        &:first-child {
+            @media screen and (min-width: $screen-md-min) {
+                padding-top: 8px;
+            }
+        }
+    }
+}
+
+.macmillan-heading--3 {
+    margin: 10px 0 0 30px;
+    padding: 18px 15px 18px 0;
+    background-image: url('/images/macmillan-headline-alt3b.png');
+    background-size: auto 100%;
+    background-position: center;
+    text-transform: capitalize;
+
+    @media screen and (min-width: $screen-sm-min) {
+        background-image: url('/images/macmillan-headline-alt3a.png');
+        padding-right: 28px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        margin-left: 30px;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        padding-right: 45px;
+        padding-top: 20px;
+        padding-bottom: 25px;
+    }
+
+    > span {
+        display: inline-block;
+
+        @media screen and (min-width: $screen-sm-min) {
+            display: block;
+        }
+    }
+
+    > span {
+        &:nth-child(1) {
+            font-size: 40px;
+            line-height: 40px;
+
+            @media screen and (min-width: 480px) {
+                font-size: 40px;
+                line-height: 40px;
+            }
+
+            @media screen and (min-width: 650px) {
+                font-size: 50px;
+                line-height: 50px;
+            }
+
+            @media screen and (min-width: $screen-sm-min) {
+                padding-left: 8px;
+                font-size: 41px;
+                line-height: 30px;
+            }
+
+            @media screen and (min-width: $screen-md-min) {
+                font-size: 55px;
+                line-height: 50px;
+            }
+        }
+
+        &:nth-child(2) {
+            padding-left: 16px;
+            font-size: 40px;
+            line-height: 40px;
+
+            @media screen and (min-width: 480px) {
+                font-size: 40px;
+                line-height: 40px;
+            }
+
+            @media screen and (min-width: 650px) {
+                font-size: 50px;
+                line-height: 50px;
+            }
+
+            @media screen and (min-width: $screen-sm-min) {
+                padding-left: 0;
+                font-size: 60px;
+                line-height: 61px;
+            }
+
+            @media screen and (min-width: $screen-md-min) {
+                font-size: 78px;
+                line-height: 70px;
+            }
+        }
+
+        &:nth-child(3),
+        &:nth-child(4) {
+            font-size: 30px;
+            line-height: 30px;
+
+            @media screen and (min-width: 480px) {
+                font-size: 30px;
+                line-height: 30px;
+            }
+
+            @media screen and (min-width: 650px) {
+                font-size: 40px;
+                line-height: 40px;
+            }
+
+            @media screen and (min-width: $screen-sm-min) {
+                font-size: 35px;
+                line-height: 31px;
+            }
+
+            @media screen and (min-width: $screen-md-min) {
+                font-size: 45px;
+                line-height: 40px;
+            }
+        }
+
+        &:nth-child(4) {
+            padding-left: 16px;
+
+            @media screen and (min-width: $screen-sm-min) {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+.macmillan-heading--4 {
+    // design not in - is desktop only as temp
+    padding-right: 24px;
+    margin-bottom: $spacer-half-height;
+    background-image: url('/images/macmillan-headline-alt4.png');
+    background-size: 100% auto;
+    text-transform: capitalize;
+
+    @media screen and (min-width: 480px) {
+        background-size: auto 100%;
+    }
+
+    @media screen and (min-width: $screen-sm-min) {
+        background-size: 100% auto;
+    }
+
+    > span {
+        &:nth-child(1) {
+            display: inline-block;
+            font-size: 40px;
+            line-height: 30px;
+
+            &:after {
+                content: "\00a0";
+            }
+
+            @media screen and (min-width: 480px) {
+                font-size: 50px;
+                line-height: 40px;
+            }
+
+            @media screen and (min-width: 650px) {
+                font-size: 50px;
+                line-height: 40px;
+            }
+
+            @media screen and (min-width: $screen-sm-min) {
+                font-size: 75px;
+                line-height: 60px;
+            }
+
+            @media screen and (min-width: $screen-md-min) {
+                font-size: 65px;
+                line-height: 55px;
+            }
+
+            @media screen and (min-width: $screen-lg-min) {
+                font-size: 75px;
+                line-height: 60px;
+            }
+        }
+
+        &:nth-child(2) {
+            display: inline-block;
+            font-size: 30px;
+            line-height: 29px;
+
+            @media screen and (min-width: 480px) {
+                font-size: 40px;
+                line-height: 38px;
+            }
+
+            @media screen and (min-width: 650px) {
+                font-size: 40px;
+                line-height: 38px;
+            }
+
+            @media screen and (min-width: $screen-sm-min) {
+                font-size: 60px;
+                line-height: 48px;
+            }
+
+            @media screen and (min-width: $screen-md-min) {
+                font-size: 50px;
+                line-height: 38px;
+            }
+
+            @media screen and (min-width: $screen-lg-min) {
+                font-size: 60px;
+                line-height: 48px;
+            }
+        }
+
+        &:nth-child(3) {
+            display: block;
+            font-size: 40px;
+            line-height: 30px;
+
+            @media screen and (min-width: 480px) {
+                font-size: 50px;
+                line-height: 40px;
+            }
+
+            @media screen and (min-width: 650px) {
+                font-size: 50px;
+                line-height: 40px;
+            }
+
+            @media screen and (min-width: $screen-sm-min) {
+                font-size: 64px;
+                line-height: 58px;
+            }
+
+            @media screen and (min-width: $screen-md-min) {
+                font-size: 55px;
+                line-height: 40px;
+            }
+
+            @media screen and (min-width: $screen-lg-min) {
+                font-size: 64px;
+                line-height: 58px;
+            }
+        }
+    }
+}
+
+.macmillan-heading--5 {
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: $spacer-half-height;
+    background-image: url('/images/macmillan-headline-alt5.png');
+    background-size: 100% auto;
+    color: $color-white;
+    text-align: center;
+    text-transform: capitalize;
+
+    font-size: 28px;
+    line-height: 28px;
+
+    @media screen and (min-width: 480px) {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    @media screen and (min-width: $screen-sm-min) {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        font-size: 65px;
+        line-height: 55px;
+        background-size: auto 100%;
+    }
+
+    @media screen and (min-width: $screen-lg-min) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        font-size: 75px;
+        line-height: 60px;
+        background-size: 100% auto;
+    }
+}
+
+.macmillan-heading--6 {
+    background-image: url('/images/macmillan-headline-alt6.png');
+    background-size: 100%;
+    text-transform: capitalize;
+
+    > span {
+        padding-left: 0;
+        padding-right: 30px;
+        font-size: 30px;
+        line-height: 40px;
+
+        @media screen and (min-width: 480px) {
+            font-size: 50px;
+            line-height: 60px;
+        }
+
+        @media screen and (min-width: 650px) {
+            font-size: 70px;
+            line-height: 80px;
+        }
+
+        @media screen and (min-width: $screen-sm-min) {
+            padding-left: 20px;
+            padding-right: 60px;
+            font-size: 59px;
+            line-height: 59px;
+        }
+
+        @media screen and (min-width: $screen-md-min) {
+            padding-left: 20px;
+            padding-right: 60px;
+            font-size: 59px;
+            line-height: 59px;
+        }
+
+        @media screen and (min-width: $screen-lg-min) {
+            font-size: 69px;
+            line-height: 69px;
+        }
+
+        &:last-child {
+            @media screen and (min-width: $screen-sm-min) {
+                font-size: 69px;
+                line-height: 69px;
+            }
+
+            @media screen and (min-width: $screen-md-min) {
+                font-size: 69px;
+                line-height: 69px;
+            }
+
+            @media screen and (min-width: $screen-lg-min) {
+                font-size: 80px;
+                line-height: 80px;
+            }
+        }
+    }
+}
+
+.macmillan-heading--7 {
+    background-image: url('/images/macmillan-headline-alt7.png');
+    font-family: $font-macmillan;
+    background-size: 100% auto;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    @media screen and (min-width: 650px) {
+        background-size: initial;
+    }
+
+    > span {
+        &:nth-child(1) {
+            padding-right: 10px;
+            font-size: 40px;
+            line-height: 40px;
+
+            @media screen and (min-width: 480px) {
+                font-size: 60px;
+                line-height: 60px;
+            }
+
+            @media screen and (min-width: $screen-md-min) {
+                padding-right: 30px;
+            }
+        }
+
+        &:nth-child(2) {
+            padding-right: 10px;
+            font-size: 30px;
+            line-height: 30px;
+
+            @media screen and (min-width: 480px) {
+                font-size: 40px;
+                line-height: 40px;
+            }
+
+            @media screen and (min-width: $screen-md-min) {
+                padding-right: 30px;
+            }
+        }
+    }
+}
+
+.macmillan-heading--8 {
+    display: inline-block;
+    width: auto;
+    background-image: url('/images/macmillan-headline-alt8.png');
+    font-family: $font-macmillan;
+    background-size: 100% 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    text-transform: capitalize;
+
+    @media screen and (min-width: 480px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @media screen and (min-width: 650px) {
+        padding-top: 18px;
+    }
+
+    @media screen and (min-width: $screen-sm-min) {
+        padding-left: 35px;
+        padding-right: 35px;
+        padding-top: 30px;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @media screen and (min-width: $screen-lg-min) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    > span {
+        &:nth-child(1) {
+            font-size: 30px;
+            line-height: 30px;
+
+            @media screen and (min-width: 480px) {
+                font-size: 44px;
+                line-height: 44px;
+            }
+
+            @media screen and (min-width: $screen-sm-min) {
+                font-size: 40px;
+                line-height: 40px;
+            }
+
+            @media screen and (min-width: $screen-md-min) {
+                font-size: 50px;
+                line-height: 50px;
+            }
+
+            @media screen and (min-width: $screen-lg-min) {
+                font-size: 56px;
+                line-height: 56px;
+            }
+        }
+
+        &:nth-child(2) {
+            padding-right: 10px;
+            font-size: 44px;
+            line-height: 44px;
+
+            @media screen and (min-width: 480px) {
+                font-size: 67px;
+                line-height: 67px;
+            }
+
+            @media screen and (min-width: 650px) {
+                font-size: 60px;
+                line-height: 60px;
+            }
+
+            @media screen and (min-width: $screen-md-min) {
+                font-size: 76px;
+                line-height: 73px;
+            }
+
+            @media screen and (min-width: $screen-lg-min) {
+                font-size: 75px;
+                line-height: 75px;
+            }
+        }
+    }
+}
+
+.macmillan-heading--9 {
+    display: inline-block;
+    padding: 15px 60px 15px 15px;
+    background-image: url('/images/macmillan-headline-alt9.png');
+    background-size: 100% 100%;
+    font-family: $font-macmillan;
+    font-size: 40px;
+    line-height: 40px;
+    color: $color-white;
+    text-transform: capitalize;
+
+    @media screen and (min-width: 480px) {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    @media screen and (min-width: 650px) {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    @media screen and (min-width: $screen-lg-min) {
+        font-size: 80px;
+        line-height: 80px;
+    }
+}
+
+.macmillan-heading--10 {
+    display: inline-block;
+    padding: 30px 50px 20px 55px;
+    background-image: url('/images/macmillan-headline-alt10.png');
+    background-size: 100% 100%;
+    font-family: $font-macmillan;
+    font-size: 40px;
+    line-height: 38px;
+    color: $color-white;
+    text-transform: capitalize;
+
+    @media screen and (min-width: 480px) {
+        font-size: 50px;
+        line-height: 47px;
+    }
+
+    @media screen and (min-width: 650px) {
+        font-size: 60px;
+        line-height: 56px;
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+        font-size: 70px;
+        line-height: 66px;
+    }
+
+    @media screen and (min-width: $screen-lg-min) {
+        font-size: 80px;
+        line-height: 75px;
+    }
+}
+
+.macmillan-heading--11 {
+    display: inline-block;
+    padding: 15px 30px 15px 40px;
+    background-image: url('/images/macmillan-headline-alt11b.png');
+    background-size: 100% 100%;
+    text-transform: capitalize;
+
+    @media screen and (min-width: $screen-sm-min) {
+        padding-left: 10px;
+        padding-right: 40px;
+        background-image: url('/images/macmillan-headline-alt11a.png');
+    }
+
+    span {
+        display: block;
+        width: 100%;
+        font-size: 47px;
+        line-height: 47px;
+        color: $color-white;
+        font-family: $font-macmillan;
+
+        @media screen and (min-width: $screen-sm-min) {
+            display: inline;
+            font-size: 52px;
+            line-height: 52px;
+        }
+
+        @media screen and (min-width: $screen-md-min) {
+            font-size: 70px;
+            line-height: 70px;
+        }
+
+        @media screen and (min-width: $screen-lg-min) {
+            font-size: 76px;
+            line-height: 76px;
+        }
+
+        &:last-child {
+            @media screen and (max-width: $screen-xs-max) {
+                font-size: 70px;
+                line-height: 66px;
+            }
+        }
+    }
+}

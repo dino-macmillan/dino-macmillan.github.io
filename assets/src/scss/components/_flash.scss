@@ -1,0 +1,82 @@
+.flash,
+ul.flash,
+.flash ul {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: $spacer-full-height;
+    border-top: 4px solid transparent;
+    font-family: $font-futura-medium;
+    font-size: 20px;
+    text-align: center;
+    list-style: none outside none;
+
+    li {
+        position: relative;
+        margin-bottom: 8px;
+        line-height: 1;
+
+        &:before {
+            position: relative;
+            top: 2px;
+            display: inline-block;
+            padding-right: 5px;
+            font-family: 'iconFont';
+            font-size: 20px;
+        }
+    }
+}
+
+.flash--search-error {
+    position: relative;
+    font-size: 16px;
+    line-height: 1.4;
+    border-color: $color-error;
+    color: $color-error;
+
+    @media screen and (min-width: $screen-sm-min) {
+        text-align: left;
+        padding-left: 75px;
+    }
+
+    a {
+        color: $color-brand-green;
+    }
+}
+
+.flash__icon {
+    display: inline-block;
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+
+    @media screen and (min-width: $screen-sm-min) {
+        position: absolute;
+        top: 15px;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+.flash--error,
+ul.flash--error,
+.flash--error ul {
+    border-color: $color-error;
+    color: $color-error;
+
+    li:before {
+        content: '\e60e';
+        color: $color-error;
+    }
+}
+
+ul.flash--success,
+.flash--success ul {
+    border-color: $color-success;
+    color: $color-success;
+
+    li:before {
+        content: '\e613';
+        color: $color-success;
+    }
+}
