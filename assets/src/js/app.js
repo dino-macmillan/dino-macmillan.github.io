@@ -322,12 +322,14 @@
                         var result = e.target.result;
                         // initialise croppy - https://foliotek.github.io/Croppie/
                         SHV.$crop_preview.croppie({
-                            url: result,
+                            
                             // requires exif.js (included in package.json) - orientates the image correctly
                             //enableExif: true, [Disabled for now - As not working on firefox]
-                            enableExif: true,
+                            enableExif: false,
+                            viewport: {width: 150, height: 150},
                             boundary: {width: 250, height: 250},
-                            viewport: {width: 150, height: 150}
+                            url: result
+                            
                         });
                         //launch the modal
                         SHV.$crop_modal.modal('show');
