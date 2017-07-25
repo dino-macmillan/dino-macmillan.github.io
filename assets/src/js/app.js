@@ -358,7 +358,7 @@
             // get the croppie result and do something with it...
             SHV.$crop_preview.croppie('result', {
                     type: 'canvas',
-                    format: 'jpeg',
+                    format: 'png',
                     size: {
                       height: 300,
                       width: 300
