@@ -321,10 +321,8 @@
                     reader.onload = function (e) {
                         var result = e.target.result;
                         // initialise croppy - https://foliotek.github.io/Croppie/
-                        SHV.$crop_preview.croppie({
-                            
+                        SHV.$crop_preview.croppie({         
                             // requires exif.js (included in package.json) - orientates the image correctly
-                            //enableExif: true, [Disabled for now - As not working on firefox]
                             enableExif: true,
                             boundary: {
                                 height: 250,
@@ -335,11 +333,9 @@
                                 width: 150
                             }
                         });
-
                         SHV.$crop_preview.croppie('bind', {
                             url: result
                         });
-                        
                         //launch the modal
                         SHV.$crop_modal.modal('show');
                     };
@@ -351,7 +347,6 @@
                     $(upload_error_container).closest('.field-row').addClass('field-row--error');
                     // kill the modal
                     SHV.$crop_modal.modal('hide');
-
                 }
             }
         });
