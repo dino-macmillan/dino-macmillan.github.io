@@ -326,16 +326,20 @@
                             // requires exif.js (included in package.json) - orientates the image correctly
                             //enableExif: true, [Disabled for now - As not working on firefox]
                             enableExif: true,
-                            viewport: {
-                                height: 150,
-                                width: 150
-                            },
                             boundary: {
                                 height: 250,
                                 width: 250
                             },
+                            viewport: {
+                                height: 150,
+                                width: 150
+                            }
+                        });
+
+                        SHV.$crop_preview.croppie('bind', {
                             url: result
                         });
+                        
                         //launch the modal
                         SHV.$crop_modal.modal('show');
                     };
@@ -357,7 +361,7 @@
             e.preventDefault();
             // get the croppie result and do something with it...
             SHV.$crop_preview.croppie('result', {
-                    type: 'canvas',
+                    format: 'jpeg',
                     size: {
                       height: 300,
                       width: 300
