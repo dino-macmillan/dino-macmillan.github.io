@@ -327,12 +327,12 @@
                             //enableExif: true, [Disabled for now - As not working on firefox]
                             enableExif: true,
                             viewport: {
-                                height: 250,
-                                width: 250
+                                height: 150,
+                                width: 150
                             },
                             boundary: {
-                                height: 350,
-                                width: 350
+                                height: 250,
+                                width: 250
                             },
                             url: result
                         });
@@ -358,7 +358,11 @@
             // get the croppie result and do something with it...
             SHV.$crop_preview.croppie('result', {
                     type: 'canvas',
-                    format: 'jpeg'
+                    format: 'jpeg',
+                    size: {
+                      height: 300,
+                      width: 300
+                    }
                 }).then(function(base64) {
                     // determine where to append the data based on the image_scope
                     switch(SHV.image_scope) {
